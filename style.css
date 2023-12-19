@@ -1,0 +1,72 @@
+.chon-div{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 20px;
+	width: 80%;
+	margin: 0 auto;
+}
+.block img{
+	width: 100%;
+}
+.block{
+	border:1px solid red;
+	transition: 0.4s;
+	position: relative;
+	text-align: center;
+	 width: 23%;
+	 overflow: hidden;
+}
+.icons{
+	position: absolute;
+	border-radius: 5px;
+	width: 30px;
+	bottom: 120px;
+	transition: 0.5s;
+	text-align: center;
+	right: -45px;
+}
+.jurok{
+	border-radius: 2px;
+	color: gray;
+	padding: 10px;
+	background: white;
+}
+.cart{
+	background: white;
+	border-radius: 2px;
+	padding: 10px;
+	color: gray;
+}
+.jurok:hover{
+	background: #890b0b;
+	color: white;
+}
+.cart:hover{
+	background: #890b0b;
+	color: white;
+}
+.block:hover .icons{
+	right: 20px;
+	transition: 0.4s;
+	overflow: visible;
+}
+@media only screen and (max-width: 900px){
+	.block{
+		width: 30%;
+		background: green;
+	}
+}
+
+@media only screen and (max-width: 760px){
+	.block{
+		width: 48%;
+		background: yellow;
+	}
+}
+@media only screen and (max-width: 600px){
+	.block{
+		background: red;
+		width: 100%;
+	}
+}
